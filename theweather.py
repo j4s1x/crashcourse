@@ -1,5 +1,6 @@
+#! python 3
+"""Would like to add the ability to write to text files as a database"""
 import requests, sys, bs4, os
-"""No need to write to a file"""
 res = requests.get('https://weather.gc.ca/city/pages/sk-40_metric_e.html')
 res.raise_for_status
 soup = bs4.BeautifulSoup(res.text)
